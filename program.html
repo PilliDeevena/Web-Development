@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Two Numbers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Add Two Numbers</h2>
+
+  <label for="num1">Enter the first number:</label>
+  <input type="text" id="num1">
+
+  <br>
+
+  <label for="num2">Enter the second number:</label>
+  <input type="text" id="num2">
+
+  <br>
+
+  <button onclick="calculateSum()">Calculate Sum</button>
+
+  <br>
+
+  <p id="result"></p>
+
+  <script>
+    // Function to add two numbers
+    function addNumbers(num1, num2) {
+      return num1 + num2;
+    }
+
+    // Function to handle button click and display result
+    function calculateSum() {
+      var number1 = parseFloat(document.getElementById("num1").value);
+      var number2 = parseFloat(document.getElementById("num2").value);
+      var resultElement = document.getElementById("result");
+
+      if (isNaN(number1) || isNaN(number2)) {
+        resultElement.textContent = "Invalid input. Please enter valid numbers.";
+      } else {
+        var sum = addNumbers(number1, number2);
+        resultElement.textContent = "The sum of " + number1 + " and " + number2 + " is: " + sum;
+      }
+    }
+  </script>
+
+</body>
+</html>

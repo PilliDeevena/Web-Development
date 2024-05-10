@@ -1,0 +1,39 @@
+section p::first-letter{
+    font-size: 30px;
+    color: brown;
+}
+h1::first-line{
+    font-style: italic;
+}
+main h2::before {
+    content:"*";
+    color: blueviolet;
+}
+nav ul li::after {
+    content: "^^^"; 
+      color: #009900; 
+  }
+  
+.paragraphs p::selection {
+    background-color: black; 
+}
+  
+.paragraphs p:first-child::first-line{
+    color: red;
+}
+
+
+nav a::before{
+    content:"$$";
+    color:darkmagenta;
+}
+nav ul li:last-child::after{
+    content:"@@";
+    color:hotpink;
+}
+nav ul::marker{
+    font-style: italic;
+}
+footer::after{
+    content:"~~~";
+}

@@ -1,0 +1,35 @@
+nav ul{
+    background-color:green;
+}
+section p{
+    color: violet;
+}
+section h2{
+    color: blue;
+}
+.paragraphs{
+    border:5px solid red;
+}
+.links a{
+    font-weight: bold;
+}
+.links a:first-child{
+    font-weight:bold;
+    color:green;
+}
+.paragraphs p:last-child{
+    font-size: 20px;
+}
+nav ul li{
+    margin-bottom: 20px;
+}
+/*.links a:last-child{
+    margin-bottom: 20cm;
+    text-underline-position: below;
+}*/
+section{
+    padding:40px ;
+}
+footer{
+    border:5px solid orange;
+}

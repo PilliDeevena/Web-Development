@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Elements and Events</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>DOM Elements and Events</h2>
+
+  <button id="myButton">Click me!</button>
+
+  <div id="output"></div>
+
+  <script>
+    // Get the button and output elements by their IDs
+    var buttonElement = document.getElementById("myButton");
+    var outputElement = document.getElementById("output");
+
+    // Add a click event listener to the button
+    buttonElement.addEventListener("click", function() {
+      // Update the content of the output div when the button is clicked
+      outputElement.textContent = "Button clicked!";
+    });
+  </script>
+
+</body>
+</html>
